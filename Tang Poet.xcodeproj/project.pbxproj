@@ -295,6 +295,7 @@
 				AC8F9B461D1E25720015EC34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
