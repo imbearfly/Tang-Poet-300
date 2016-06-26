@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oHu-eL-SKJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9vB-Up-dpI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
@@ -7,10 +7,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--唐詩-->
         <scene sceneID="QVR-9L-PpA">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chq-zb-GqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oHu-eL-SKJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="唐詩" image="book-icon-by-sonoftroll-26" id="6TX-RJ-irr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="e9v-qP-11b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -19,12 +21,11 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="X4Y-Tg-02c" kind="relationship" relationship="rootViewController" id="Phk-T7-5qe"/>
+                        <segue destination="X4Y-Tg-02c" kind="relationship" relationship="rootViewController" id="Txr-0k-x6M"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="chq-zb-GqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-549" y="-962"/>
+            <point key="canvasLocation" x="188" y="-1533"/>
         </scene>
         <!--詩人-->
         <scene sceneID="UIk-2C-lzb">
@@ -41,7 +42,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9k4-uT-wid" id="GWD-wH-lmb">
-                                            <frame key="frameInset" width="320" height="44"/>
+                                            <frame key="frameInset" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☞ 白居易" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyg-Rn-Dux">
@@ -55,12 +56,15 @@
                                                 <constraint firstItem="eyg-Rn-Dux" firstAttribute="leading" secondItem="GWD-wH-lmb" secondAttribute="leadingMargin" constant="12" id="KmV-sR-3Zw"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="y5J-Rl-CKz" kind="show" id="DIw-Zh-eMw"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zf4-sA-NCU">
                                         <rect key="frame" x="0.0" y="44" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zf4-sA-NCU" id="xNP-yp-nHW">
-                                            <frame key="frameInset" width="320" height="44"/>
+                                            <frame key="frameInset" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☞ 李白" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ca-Ez-uEu">
@@ -79,7 +83,7 @@
                                         <rect key="frame" x="0.0" y="88" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T7v-Dc-A3i" id="oBL-Do-d4j">
-                                            <frame key="frameInset" width="320" height="44"/>
+                                            <frame key="frameInset" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☞ 王維" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgH-wI-54R">
@@ -93,9 +97,6 @@
                                                 <constraint firstItem="vgH-wI-54R" firstAttribute="leading" secondItem="oBL-Do-d4j" secondAttribute="leadingMargin" constant="12" id="XTI-NF-tQr"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="y5J-Rl-CKz" kind="show" id="ft4-s3-kYL"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -105,11 +106,249 @@
                             <outlet property="delegate" destination="X4Y-Tg-02c" id="CEB-06-iHy"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="唐詩" image="book-icon-by-sonoftroll-26" id="DhT-d6-DTW"/>
                     <navigationItem key="navigationItem" title="詩人" id="GEG-8r-SSd"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bnk-Zu-7Tg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="-1361"/>
+            <point key="canvasLocation" x="1219" y="-1570"/>
+        </scene>
+        <!--宋詞-->
+        <scene sceneID="7O1-mg-s3K">
+            <objects>
+                <navigationController id="R6j-fm-ecG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="宋詞" image="plainicon.com-47638-256px-0ee" id="qTA-gW-SSF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GHS-dy-IKS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.82185927010000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6CB-Y1-Gfu" kind="relationship" relationship="rootViewController" id="lEb-W3-0Gr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6P-5T-aKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-384" y="-894"/>
+        </scene>
+        <!--宋詞-->
+        <scene sceneID="Tnf-Ar-OuE">
+            <objects>
+                <tableViewController id="6CB-Y1-Gfu" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="RVk-Jb-kaG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="3XZ-Pf-5Mj">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XTR-i9-Yll">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XTR-i9-Yll" id="sYk-W3-l49">
+                                            <frame key="frameInset" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蘇軾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hA-ia-giX">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8hA-ia-giX" firstAttribute="leading" secondItem="sYk-W3-l49" secondAttribute="leadingMargin" constant="12" id="5k5-9z-HcK"/>
+                                                <constraint firstItem="8hA-ia-giX" firstAttribute="top" secondItem="sYk-W3-l49" secondAttribute="topMargin" constant="6" id="iEO-M2-Ae6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="9xh-Ln-Arc" kind="show" id="4sd-S5-ibV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="n4Z-kx-IWb">
+                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n4Z-kx-IWb" id="3KI-iu-tDI">
+                                            <frame key="frameInset" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陸儀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKn-3g-rLe">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JKn-3g-rLe" firstAttribute="leading" secondItem="3KI-iu-tDI" secondAttribute="leadingMargin" constant="12" id="Ru7-qw-Tf8"/>
+                                                <constraint firstItem="JKn-3g-rLe" firstAttribute="top" secondItem="3KI-iu-tDI" secondAttribute="topMargin" constant="3" id="Udn-Ga-31q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kfH-2q-umh">
+                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kfH-2q-umh" id="NPf-AU-Pbf">
+                                            <frame key="frameInset" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="孔夷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNn-5Q-P8p">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vNn-5Q-P8p" firstAttribute="leading" secondItem="NPf-AU-Pbf" secondAttribute="leadingMargin" constant="12" id="a9k-tN-w2u"/>
+                                                <constraint firstItem="vNn-5Q-P8p" firstAttribute="top" secondItem="NPf-AU-Pbf" secondAttribute="topMargin" constant="3" id="cwL-4P-QdF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="6CB-Y1-Gfu" id="h9E-M6-Osf"/>
+                            <outlet property="delegate" destination="6CB-Y1-Gfu" id="3hS-pe-DWJ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="宋詞" image="plainicon.com-47638-256px-0ee" id="tqK-YL-6PK"/>
+                    <navigationItem key="navigationItem" title="宋詞" id="eGI-zK-h2A"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cr1-en-kmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="-731"/>
+        </scene>
+        <!--蘇軾-->
+        <scene sceneID="Pz2-oV-l7Y">
+            <objects>
+                <tableViewController id="9xh-Ln-Arc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ncg-KY-bkf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="ypM-4A-U7S">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fnc-nV-7H4">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fnc-nV-7H4" id="AJb-wC-Pji">
+                                            <frame key="frameInset" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水龍吟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vD-J4-f07">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7vD-J4-f07" firstAttribute="top" secondItem="AJb-wC-Pji" secondAttribute="topMargin" constant="3" id="3sn-4b-5ZI"/>
+                                                <constraint firstItem="7vD-J4-f07" firstAttribute="leading" secondItem="AJb-wC-Pji" secondAttribute="leadingMargin" constant="12" id="FS2-Xq-XoA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="eZf-oS-eke" kind="show" id="JoW-MC-r3s"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9Wa-2G-Qgq">
+                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Wa-2G-Qgq" id="TS4-yt-q6J">
+                                            <frame key="frameInset" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="念奴橋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFm-pp-X3P">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TFm-pp-X3P" firstAttribute="top" secondItem="TS4-yt-q6J" secondAttribute="topMargin" constant="3" id="m63-RM-vZV"/>
+                                                <constraint firstItem="TFm-pp-X3P" firstAttribute="leading" secondItem="TS4-yt-q6J" secondAttribute="leadingMargin" constant="12" id="wqf-5I-UmM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dK2-EE-Jfh">
+                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dK2-EE-Jfh" id="sur-gx-hnF">
+                                            <frame key="frameInset" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="江神子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmR-aj-Qcg">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RmR-aj-Qcg" firstAttribute="top" secondItem="sur-gx-hnF" secondAttribute="topMargin" constant="3" id="gYD-vX-ysb"/>
+                                                <constraint firstItem="RmR-aj-Qcg" firstAttribute="leading" secondItem="sur-gx-hnF" secondAttribute="leadingMargin" constant="12" id="x5V-at-6UK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="9xh-Ln-Arc" id="pRW-By-egE"/>
+                            <outlet property="delegate" destination="9xh-Ln-Arc" id="xT9-yV-Ywe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="蘇軾" id="0B1-MU-eHp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6G-8Q-uiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1284" y="-720"/>
+        </scene>
+        <!--水龍吟-->
+        <scene sceneID="lNM-v1-gsH">
+            <objects>
+                <viewController id="eZf-oS-eke" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8tc-AN-0DK"/>
+                        <viewControllerLayoutGuide type="bottom" id="iLm-Rd-2DQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M0Y-Ju-SKu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eSd-Gr-pC1">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="267" id="6gG-wX-RE4"/>
+                                    <constraint firstAttribute="width" constant="240" id="xIs-Nr-kHC"/>
+                                </constraints>
+                                <string key="text">
+似 花 還 似 非 花 ，也 無 人 惜 從 教 墜 。
+拋 家 傍 路 ，思 量 卻 是 ，
+無 情 有 思 。縈 損 柔 腸 ，
+困 酣 嬌 眼 ，欲 開 還 閉 。
+夢 隨 風 萬 里 ，	尋 郎 去 處 ，
+又 還 被 、	鶯 呼 起 。
+不 恨 此 花 飛 盡 ，恨 西 園 、
+落 紅 難 綴 。曉 來 雨 過 ，
+遺 蹤 何 在 ，一 池 萍 碎 。
+春 色 三 分 ，二 分 塵 土 ，
+一 分 流 水 。細 看 來 ，
+不 是 楊 花 ，點 點 是 離 人 淚 。
+</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eSd-Gr-pC1" firstAttribute="centerX" secondItem="M0Y-Ju-SKu" secondAttribute="centerX" id="DeS-gm-j5V"/>
+                            <constraint firstItem="eSd-Gr-pC1" firstAttribute="centerY" secondItem="M0Y-Ju-SKu" secondAttribute="centerY" id="g11-mr-LdJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="水龍吟" id="ucV-U3-Iv0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xeU-z3-vRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1993.125" y="-732.04225352112678"/>
         </scene>
         <!--王維-->
         <scene sceneID="x0C-xe-abZ">
@@ -126,7 +365,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p7O-3a-d7u" id="X9j-U3-YDf">
-                                            <frame key="frameInset" width="320" height="44"/>
+                                            <frame key="frameInset" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相思" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7q-sR-kNb">
@@ -144,13 +383,14 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="UJr-Rt-vjH" kind="show" id="C2l-3T-wvi"/>
+                                            <segue destination="RBS-Xi-UHk" kind="show" trigger="accessoryAction" id="59Z-8D-XdX"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jUv-LN-bYs">
                                         <rect key="frame" x="0.0" y="44" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jUv-LN-bYs" id="x1j-kg-4B0">
-                                            <frame key="frameInset" width="320" height="44"/>
+                                            <frame key="frameInset" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="長恨歌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1x-kz-Phw">
@@ -177,7 +417,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbM-aj-9Rg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765" y="-1361"/>
+            <point key="canvasLocation" x="1934" y="-1495"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="40C-cU-QZq">
@@ -191,8 +431,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="紅豆生南國，春來發幾枝。  願君多採擷，此物最相思。" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3gV-vy-IJz">
-                                <frame key="frameInset" minX="28" minY="270" width="278" height="100"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="紅豆生南國，春來發幾枝。  願君多採擷，此物最相思。" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3gV-vy-IJz">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="278" id="BzH-cw-KjS"/>
@@ -211,7 +450,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oDR-RR-acR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368.75" y="-1455.6338028169014"/>
+            <point key="canvasLocation" x="2634" y="-1494"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Fnb-A9-IDu">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9vB-Up-dpI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="bWc-mz-QhI"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Umj-Dg-mCd">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="oHu-eL-SKJ" kind="relationship" relationship="viewControllers" id="cj3-uk-0K5"/>
+                        <segue destination="R6j-fm-ecG" kind="relationship" relationship="viewControllers" id="ffx-63-0GF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AXu-IR-oKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-776" y="-1698"/>
+        </scene>
+        <!--相思-->
+        <scene sceneID="eRQ-0E-GKM">
+            <objects>
+                <viewController id="RBS-Xi-UHk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tWg-0b-ofp"/>
+                        <viewControllerLayoutGuide type="bottom" id="bvG-X2-3Nx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yP5-DB-pGf">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="紅豆生南國，春來發幾枝。  願君多採擷，此物最相思。" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q3C-6G-aIA">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="FtT-Mv-QTy"/>
+                                    <constraint firstAttribute="height" constant="100" id="wwY-lK-Y1C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evS-fH-fe7">
+                                <frame key="frameInset" minX="-80" height="49" maxX="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="0ev-tK-wIf"/>
+                                    <tabBarItem systemItem="more" id="kWn-38-mAT"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q3C-6G-aIA" firstAttribute="centerX" secondItem="yP5-DB-pGf" secondAttribute="centerX" id="ZXm-B6-nAc"/>
+                            <constraint firstItem="Q3C-6G-aIA" firstAttribute="centerY" secondItem="yP5-DB-pGf" secondAttribute="centerY" id="pZ9-Io-eKq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="相思" id="e7A-I7-n6I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6W9-nv-fCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2634" y="-1494"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="book-icon-by-sonoftroll-26" width="25" height="20"/>
+        <image name="plainicon.com-47638-256px-0ee" width="25" height="25"/>
+    </resources>
 </document>
